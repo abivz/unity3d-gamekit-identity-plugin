@@ -14,7 +14,7 @@ namespace GCIdentityPlugin
 
         public static string[] ParseIdentity(string identity)
         {
-            return identity.Split(new char[] {';'});
+            return identity.Split(';');
         }
     }
 }
