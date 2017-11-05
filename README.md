@@ -1,5 +1,9 @@
 # About
-Unity3D native iOS plugin for third-party application/servers such as [GameSparks](https://www.gamesparks.com/).
+Plugin call `[GKLocalPlayer generateIdentityVerificationSignatureWithCompletionHandler]` (iOS 7.0+) which generates a signature that allows a third party server to authenticate the local player. And invoke callbacks in the target GameObject:
+* `OnIdentitySuccess` on success. Contain `<publicKeyURL>;<signature>;<salt>;<timestamp>;`
+* `OnIdentityError` on error
+
+For example use in GameCenterConnectRequest on [GameSparks](https://www.gamesparks.com/) backend.
 
 # License
 The MIT License (MIT)
