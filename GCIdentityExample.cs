@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 
+using GCIdentityPlugin;
+
 public class GCIdentityExample : MonoBehaviour
 {
     void Awake()

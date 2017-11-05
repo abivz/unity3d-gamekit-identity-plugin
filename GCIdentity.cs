@@ -1,17 +1,20 @@
 using System.Runtime.InteropServices;
 
-public class GCIdentity
+namespace GCIdentityPlugin
 {
-    [DllImport("__Internal")]
-    static extern void _GenerateIdentity(string gameObjectName);
-
-    public static void GenerateIdentity(string gameObjectName)
+    public class GCIdentity
     {
-        _GenerateIdentity(gameObjectName);
-    }
+        [DllImport("__Internal")]
+        static extern void _GenerateIdentity(string gameObjectName);
 
-    public static string[] ParseIdentity(string identity)
-    {
-        return identity.Split(new char[] {';'});
+        public static void GenerateIdentity(string gameObjectName)
+        {
+            _GenerateIdentity(gameObjectName);
+        }
+
+        public static string[] ParseIdentity(string identity)
+        {
+            return identity.Split(new char[] {';'});
+        }
     }
 }
