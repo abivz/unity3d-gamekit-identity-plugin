@@ -3,7 +3,10 @@ Plugin call `[GKLocalPlayer generateIdentityVerificationSignatureWithCompletionH
 * `OnIdentitySuccess` on success. Contain `<publicKeyURL>;<signature>;<salt>;<timestamp>;`
 * `OnIdentityError` on error
 
-For example use in GameCenterConnectRequest on [GameSparks](https://www.gamesparks.com/) backend.
+For example, signature used in GameCenterConnectRequest on [GameSparks](https://www.gamesparks.com/) backend.
+
+# Install
+Just copy `Plugin` folder and `GCIdentity.cs` in Assets (e.g. Assets/GCIdentity) folder.
 
 # License
 The MIT License (MIT)
