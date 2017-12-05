@@ -6,7 +6,7 @@ Plugin call `[GKLocalPlayer generateIdentityVerificationSignatureWithCompletionH
 For example, signature used in GameCenterConnectRequest on [GameSparks](https://www.gamesparks.com/) backend.
 
 # Install
-Just copy `Plugin` folder and `GCIdentity.cs` in Assets (e.g. Assets/GCIdentity) folder.
+Just copy `Plugins` folder and `GCIdentity.cs` in Assets (e.g. Assets/GCIdentity) folder.
 
 # License
 The MIT License (MIT)
